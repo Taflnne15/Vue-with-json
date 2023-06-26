@@ -4,7 +4,19 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+ <Footer/>
 </template>
+<script>
+import Footer from '@/components/Footer.vue';
+
+  export default {
+    components: {
+      Footer,
+    }
+  }
+</script>
+
+
 
 <style>
 #app {
@@ -26,5 +38,12 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.card-body{
+  border: solid black 4px;
+  background-color: #42b983;
+}
+h6{
+  font-weight: 600;
 }
 </style>
